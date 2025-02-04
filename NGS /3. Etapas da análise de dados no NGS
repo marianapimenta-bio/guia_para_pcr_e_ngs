@@ -1,0 +1,11 @@
+Primeiro passo: Preparação da biblioteca – Fragmentação do DNA e adição de adaptadores para facilitar o sequenciamento.
+
+Segundo passo: Sequenciamento – Os fragmentos são lidos em paralelo por plataformas como Illumina, PacBio ou Oxford Nanopore.
+
+Teceiro passo: Pré-processamento dos dados – Qualidade das sequências é verificada e leituras de baixa qualidade são filtradas.
+
+Quarto passo: Alinhamento e montagem – As leituras são comparadas com um genoma de referência ou montadas de novo (de novo assembly).
+
+Quinto passo: Análise de variantes – Identificação de mutações, polimorfismos e outras alterações genômicas.
+
+Sexto passo: Interpretação biológica – Dados são analisados em um contexto biológico, ajudando a responder questões sobre evolução, doenças genéticas e expressão gênica.
