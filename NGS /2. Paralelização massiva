@@ -1,0 +1,12 @@
+A paralelização massiva no Sequenciamento de Nova Geração (NGS) significa que milhões de fragmentos de DNA são sequenciados ao mesmo tempo, em paralelo.
+
+Primeiro passo: Fragmentação do DNA – O DNA de interesse é quebrado em milhares ou milhões de pequenos pedaços.
+
+Segundo passo: Fixação em uma superfície sólida – Esses fragmentos são ligados a uma plataforma (exemplo: flow cell no sistema Illumina).
+
+Terceiro passo: Amplificação e leitura simultânea – Cada pequeno fragmento de DNA se fixa em uma superfície sólida (como um flow cell no Illumina), 
+esse fragmento é então copiado várias vezes para formar um cluster de moléculas idênticas.
+Isso é necessário porque os sensores das máquinas de sequenciamento precisam de um sinal forte para detectar cada base corretamente.
+Cada cluster passa por um processo de síntese de DNA enquanto nucleotídeos marcados com fluorescência são incorporados e uma câmera registra a 
+cor emitida por cada nucleotídeo, identificando a sequência de bases (A, T, C, G).
+Como milhões de clusters são lidos ao mesmo tempo, o sequenciamento ocorre de forma muito rápida.
