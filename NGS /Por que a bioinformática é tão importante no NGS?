@@ -1,0 +1,32 @@
+1. Armazenamento e organização dos dados
+
+- O sequenciamento pode gerar terabytes de informações em arquivos contendo milhões de sequências de DNA.
+- É necessário um sistema eficiente para armazenar e acessar esses dados.
+
+
+2. Qualidade dos dados e pré-processamento
+
+Nem todas as sequências geradas são perfeitas. A bioinformática usa ferramentas para:
+
+- Filtrar leituras de baixa qualidade
+- Remover contaminantes ou sequências duplicadas
+- Corrigir erros de sequenciamento
+
+
+3. Alinhamento e montagem do genoma
+
+As sequências curtas geradas pelo NGS precisam ser reconstruídas para formar um genoma completo. Isso pode ser feito de duas formas:
+
+- Alinhamento: Comparando as leituras com um genoma de referência.
+- Montagem de novo: Quando não há referência disponível, algoritmos juntam as sequências para formar um novo genoma.
+
+
+4. Análise de variantes genéticas
+
+- Identificação de mutações, polimorfismos (SNPs) e outras alterações genéticas.
+- Essencial para pesquisas médicas e identificação de doenças genéticas.
+
+
+5. Interpretação biológica
+
+- Ferramentas bioinformáticas ajudam a entender a função dos genes sequenciados.
