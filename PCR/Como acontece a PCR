@@ -1,0 +1,34 @@
+O processo ocorre em três etapas cíclicas dentro do termociclador:
+
+1. Desnaturação (95°C) – O DNA molde se separa em duas fitas simples.
+
+2. Anelamento (50-65°C) – Os primers se ligam às regiões complementares do DNA (ou RNA).
+
+3. Extensão (72°C) – A Taq polimerase adiciona nucleotídeos à nova fita de DNA (ou RNA).
+
+Este processo se repete em ciclos (normalmente 40), cada ciclo duplica a quantidade de DNA (ou RNA)
+Após a etapa de extensão, o termociclador irá resfriar novamente, para que ocorra e ligação das duas fitas, no caso do DNA, e inicie um novo ciclo.
+
+Caso não tenha ficado claro, segue abaixo um código para gerar um gráfico sobre a variação de temperatura durante o processo de PCR (código em R):
+
+# Instalar (se necessário) e carregar a biblioteca ggplot2
+install.packages("ggplot2", dependencies=TRUE)
+library(ggplot2)
+
+# Criando os dados da PCR (tempo fictício para cada etapa)
+ciclo <- rep(1:3, times=10)  # exemplo: 10 ciclos de PCR 
+etapa <- rep(c("Desnaturação", "Anelamento", "Extensão"), times=10)
+tempo <- rep(seq(1, 30, by=3), each=3)  # Simulação do tempo para construção do gráfico
+temperatura <- rep(c(95, 55, 72), times=10)  # Temperaturas padrão
+
+# Criando um data frame
+dados_pcr <- data.frame(Ciclo = ciclo, Etapa = etapa, Tempo = tempo, Temperatura = temperatura)
+
+# Gerando o gráfico
+ggplot(dados_pcr, aes(x = Tempo, y = Temperatura, color = Etapa, group = Ciclo)) +
+  geom_line(size = 1) +
+  geom_point(size = 3) +
+  labs(title = "Variação da Temperatura Durante a PCR",
+       x = "Tempo (segundos)",
+       y = "Temperatura (°C)") +
+  theme_minimal()
