@@ -16,7 +16,7 @@ install.packages("ggplot2", dependencies=TRUE)
 library(ggplot2)
 
 # Criando os dados da PCR (tempo fictício para cada etapa)
-ciclo <- rep(1:3, times=10)  # exemplo: 10 ciclos de PCR 
+ciclo <- rep(1:3, times=10)  # Exemplo: 10 ciclos de PCR 
 etapa <- rep(c("Desnaturação", "Anelamento", "Extensão"), times=10)
 tempo <- rep(seq(1, 30, by=3), each=3)  # Simulação do tempo para construção do gráfico
 temperatura <- rep(c(95, 55, 72), times=10)  # Temperaturas padrão
